@@ -35,7 +35,7 @@ function LivreDetail() {
   };
 
   return (
-    <div>
+    <div  className="min-h-screen flex flex-col">
       {showmodal && <Modal showmodal={showmodal} setshowmodal={setshowmodal} />}
       {livreDetails ? (
         <>
