@@ -64,7 +64,7 @@ const Login = ({setConnect}) => {
         <div class="hidden lg:flex items-center justify-center flex-1 bg-white text-black">
           <div class="max-w-md text-center">
             <img
-              src="livre.jpg"
+              src="https://storage.googleapis.com/devitary-image-host.appspot.com/15848031292911696601-undraw_designer_life_w96d.svg"
               alt=""
               className="w-[524.67004px] h-[531.39694px] w-full"
             />
