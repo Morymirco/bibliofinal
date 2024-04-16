@@ -4,7 +4,7 @@ import { getDoc, doc } from "firebase/firestore";
 import { db } from "./firebaseconfig";
 import Footer from "./footer";
 import Modal from "./Modal";
-
+import Similaire from "./similaire";
 function LivreDetail() {
   const location = useLocation();
   const livre = location.state; // Récupérer les données du livre passées via l'état de localisation
@@ -86,7 +86,11 @@ function LivreDetail() {
                   </div>
                 </div>
               </div>
+              <h1 className="text-3xl font-bold text-gray-800 mb-8">Livres similaires </h1>
+           
+          <Similaire/>
             </div>
+           
           </div>
         </>
       ) : (
