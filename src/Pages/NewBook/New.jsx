@@ -273,7 +273,7 @@ function New({ connected }) {
                 </div>
               </div>
             </div>
-            (
+            
             <div class="mb-6">
               <label
                 for="message"
