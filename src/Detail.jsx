@@ -95,7 +95,7 @@ function LivreDetail() {
                       <span className="font-bold text-gray-700">
                         Date de publication
                       </span>
-                      <span className="text-gray-600">
+                      <span className="text-gray-600 block">
                         {livre.selectedYear}
                       </span>
                     </div>
@@ -103,7 +103,7 @@ function LivreDetail() {
                       <span className="font-bold text-gray-700">
                         Catégorie :
                       </span>
-                      <span className="text-gray-600">
+                      <span className="text-gray-600 block">
                         {livre.selectedCategory}
                       </span>
                     </div>
@@ -112,7 +112,7 @@ function LivreDetail() {
                     <span className="font-bold text-gray-700">
                       Nombre de pages
                     </span>
-                    <span className="text-gray-600 text-sm">201</span>
+                    <span className="text-gray-600 text-sm block">201</span>
                   </div>
                   <div className="mb-4">
                     <span className="font-bold text-gray-700">

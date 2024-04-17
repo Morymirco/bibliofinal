@@ -14,7 +14,8 @@ function New({ connected }) {
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [selectedYear, setSelectedYear] = useState("");
   const [numberOfPages, setNumberOfPages] = useState("");
-
+  const [pdf, setPdf] = useState(null); // État pour stocker le fichier PDF sélectionné
+  const [pdfUrl, setPdfUrl] = useState("");
   //creation de la reference de la base de données
   const dbref = collection(db, "Livres");
   //ajout de la donnée
@@ -28,7 +29,9 @@ function New({ connected }) {
         // Créez une référence de stockage pour l'image de couverture
         const storageRef = ref(storage, `images/${coverImage.name}`);
         // const coverImageRef = storageRef.child(coverImage.name);
-
+        const storageRef2 = ref(storage, `pdfs/${pdf.name}`);
+        await uploadBytesResumable(storageRef2, pdf);
+        const pdfDownloadURL = await getDownloadURL(storageRef2);
         await uploadBytesResumable(storageRef, coverImage); // Utiliser coverImage ici
         const downloadURL = await getDownloadURL(storageRef);
         // Ajoutez les données du livre dans Firestore avec l'URL de l'image de couverture
@@ -41,6 +44,7 @@ function New({ connected }) {
           numberOfPages,
           description,
           downloadURL, // Stockez l'URL de l'image de couverture dans la collection Firestore
+          pdfDownloadURL,
           auteur: { name: auth.currentUser.email, id: auth.currentUser.uid },
         });
 
@@ -82,6 +86,18 @@ function New({ connected }) {
         setUploadedImage(reader.result); // Stocke l'image téléchargée dans l'état local
       };
 
+      reader.readAsDataURL(file);
+    }
+  };
+  const handlePdfChange = (event) => {
+    // Mettez à jour l'état du fichier PDF lorsqu'un fichier est sélectionné
+    const file = event.target.files[0];
+    if (file) {
+      setPdf(file);
+      const reader = new FileReader();
+      reader.onload = () => {
+        setPdfUrl(reader.result); // Stockez l'URL du fichier PDF dans l'état local
+      };
       reader.readAsDataURL(file);
     }
   };
@@ -162,8 +178,11 @@ function New({ connected }) {
                   <option selected>Choisir un genre </option>
                   <option value="Romance">Romance</option>
                   <option value="Fiction">Fiction</option>
-                  <option value="Thriller">thriller </option>
-                  <option value="Science-fiction">Science-fiction</option>
+                  <option value="Thriller">Thriller </option>
+                  <option value="Comedie">Comedie </option>
+                  <option value="Horreur">Horreur </option>
+                  <option value="Fantastique">Fantastique</option>
+                  <option value="Action">Action</option>
                 </select>
               </div>
               <div class="mb-4 w-1/2">
@@ -205,6 +224,10 @@ function New({ connected }) {
                   <option value="2023">2023</option>
                   <option value="2022">2022</option>
                   <option value="2021">2021</option>
+                  <option value="1947">1947</option>
+                  <option value="1966">1966</option>
+                  <option value="1942">1942</option>
+                  <option value="1921">1921</option>
                 </select>
               </div>
               <div className="mb-4 w-1/2">
@@ -273,7 +296,7 @@ function New({ connected }) {
                 </div>
               </div>
             </div>
-            
+
             <div class="mb-6">
               <label
                 for="message"
@@ -340,6 +363,25 @@ function New({ connected }) {
                 </label>
               </div>
             )}
+
+            <div class="max-w-2xl mx-auto mb-3">
+              <label
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                for="file_input"
+              >
+                Télécharger le pdf
+              </label>
+              <input
+                class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                id="file_input"
+                type="file"
+                onChange={handlePdfChange}
+                accept=".pdf"
+                required
+              />
+
+              <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+            </div>
             <button
               type="submit"
               class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue"

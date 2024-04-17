@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ajout() {
+export default function Ajout() {
   return (
     <div>
         <div class="my-6 mx-auto max-w-xl bg-white font-[sans-serif]">

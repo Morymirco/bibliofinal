@@ -160,7 +160,7 @@ function Livres({ onligne }) {
           </button>
         </div>
       </div>
-      <ButtonFavoris/>
+      <ButtonFavoris livres={originalLivres} setLivres={setLivres} />
       {trouver && (
         <div className="min-h-screen flex justify-center items-center text-gray-600">
           <img
