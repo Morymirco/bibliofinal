@@ -54,11 +54,11 @@ export default function Homepage() {
               />
               <div class="p-6">
                 <h3 class="text-xl font-bold text-gray-800 mb-2">
-                  Single Origin Blend
+                  L'enfant noir
                 </h3>
                 <p class="text-gray-700 text-base">
-                  Our most popular blend, featuring beans from a single farm in
-                  Ethiopia. Notes of chocolate, berries, and citrus.
+                  "L'Enfant noir" est un récit autobiographique qui raconte
+                  l'enfance de l'auteur en Guinée
                 </p>
                 <div class="mt-4 flex items-center justify-between">
                   <span class="text-gray-700 font-medium">Gratuit !</span>
@@ -75,12 +75,10 @@ export default function Homepage() {
                 class="w-full h-64 object-cover"
               />
               <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">
-                  Dark Roast Blend
-                </h3>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Dramouss</h3>
                 <p class="text-gray-700 text-base">
-                  A bold and flavorful blend of beans from Brazil, Colombia, and
-                  Indonesia. Notes of caramel, nuts, and tobacco.
+                  Dramouss" est un roman qui raconte l'histoire d'un jeune homme
+                  qui quitte son village pour poursuivre ses étude
                 </p>
                 <div class="mt-4 flex items-center justify-between">
                   <span class="text-gray-700 font-medium">Gratuit</span>
@@ -97,12 +95,10 @@ export default function Homepage() {
                 class="w-full h-64 object-cover"
               />
               <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">
-                  Dark Roast Blend
-                </h3>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">L'Étranger</h3>
                 <p class="text-gray-700 text-base">
-                  A bold and flavorful blend of beans from Brazil, Colombia, and
-                  Indonesia. Notes of caramel, nuts, and tobacco.
+                  L'histoire de Meursault, un homme indifférent aux normes
+                  sociales, dont la vie bascule après un acte
                 </p>
                 <div class="mt-4 flex items-center justify-between">
                   <span class="text-gray-700 font-medium">50.000 G</span>
@@ -119,12 +115,10 @@ export default function Homepage() {
                 class="w-full h-64 object-cover"
               />
               <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">
-                  Dark Roast Blend
-                </h3>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Batouala</h3>
                 <p class="text-gray-700 text-base">
-                  A bold and flavorful blend of beans from Brazil, Colombia, and
-                  Indonesia. Notes of caramel, nuts, and tobacco.
+                  "Batouala" est un roman qui décrit la vie dans la colonie
+                  française d'Afrique équatoriale. Il raconte l'histoire d'un
                 </p>
                 <div class="mt-4 flex items-center justify-between">
                   <span class="text-gray-700 font-medium">50.000 G</span>
@@ -288,14 +282,21 @@ export default function Homepage() {
                       <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between bg-white p-2 rounded-lg shadows-lg">
                         <div>
                           <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">
-                            Some of the best work that was done!
+                            Certains des meilleurs travaux qui ont été
+                            réalisés !
                           </h1>
                           <p className="text-base font-medium leading-6 mt-4 text-gray-600">
-                            Our core values are at the heart of all that we do.
-                            They are integrated into our daily work lives and
-                            help us to remember our customers always comes
-                            first, the last thank you should always comes from
-                            us.
+                            Cette bibliothèque en ligne est tout simplement
+                            incroyable ! Elle offre un accès facile à une vaste
+                            gamme de livres dans différents genres et sujets.
+                            Que vous soyez passionné de littérature classique,
+                            de science-fiction, d'histoire ou de développement
+                            personnel, vous trouverez sûrement quelque chose qui
+                            vous intéresse. De plus, la plateforme est
+                            conviviale et bien organisée, ce qui rend la
+                            recherche et la navigation simples et efficaces. Je
+                            suis reconnaissant d'avoir une telle source
+                            inestimable de connaissances à portée de clic
                           </p>
                         </div>
                         <div className="md:mt-0 mt-8">
@@ -333,14 +334,23 @@ export default function Homepage() {
                       <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between">
                         <div>
                           <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">
-                            Some of the best work that was done!
+                            Certains des meilleurs travaux qui ont été
+                            réalisés !!
                           </h1>
                           <p className="text-base font-medium leading-6 mt-4 text-gray-600">
-                            Our core values are at the heart of all that we do.
-                            They are integrated into our daily work lives and
-                            help us to remember our customers always comes
-                            first, the last thank you should always comes from
-                            us.
+                            Je suis un fervent lecteur et cette bibliothèque en
+                            ligne a vraiment révolutionné ma manière de lire.
+                            Avec sa vaste collection de livres numériques, je
+                            peux emporter ma bibliothèque partout avec moi, que
+                            ce soit sur mon téléphone, ma tablette ou mon
+                            ordinateur. J'apprécie particulièrement la
+                            fonctionnalité de personnalisation qui me permet de
+                            mettre en favori mes livres préférés et de suivre
+                            mes progrès de lecture. De plus, la possibilité de
+                            télécharger les livres pour une lecture hors ligne
+                            est un énorme avantage. En somme, c'est une
+                            expérience de lecture immersive que je recommande à
+                            tous les amateurs de livres us.
                           </p>
                         </div>
                         <div className="md:mt-0 mt-8">
