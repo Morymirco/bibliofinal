@@ -24,7 +24,7 @@ export default function Homepage() {
               </p>
               <Link
                 to="/Livres"
-                class="px-6 py-3 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-700 transition duration-200"
+                class="px-6 py-3 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-700 hover:text-white hover:border  transition duration-200"
               >
                 Découvir maintenant
               </Link>
