@@ -2,7 +2,7 @@ import React from "react";
 
 function Load(props) {
   return (
-    <div class="container mx-auto mx-auto p-4">
+    <div class="container mx-auto p-4">
       <div
         class="grid grid-cols-1 sm:grid-cols-2 
                 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4"
