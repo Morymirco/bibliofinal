@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../../footer";
+import { Link } from "react-router-dom";
 import {
   CarouselProvider,
   Slider,
@@ -21,12 +22,12 @@ export default function Homepage() {
               <p class="text-white text-xl mb-8">
                 Un accès illimité à des millions de livres à portée de main
               </p>
-              <a
-                href="#"
+              <Link
+                to="/Livres"
                 class="px-6 py-3 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-700 transition duration-200"
               >
                 Découvir maintenant
-              </a>
+              </Link>
             </div>
             <div class="md:w-1/2">
               <img
