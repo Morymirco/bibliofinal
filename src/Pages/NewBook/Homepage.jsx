@@ -61,7 +61,7 @@ export default function Homepage() {
                   l'enfance de l'auteur en Guinée
                 </p>
                 <div class="mt-4 flex items-center justify-between">
-                  <span class="text-gray-700 font-medium">Gratuit !</span>
+                  <span class="text-gray-700 font-medium">Camara Laye</span>
                   <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
                     voir plus
                   </button>
@@ -81,7 +81,7 @@ export default function Homepage() {
                   qui quitte son village pour poursuivre ses étude
                 </p>
                 <div class="mt-4 flex items-center justify-between">
-                  <span class="text-gray-700 font-medium">Gratuit</span>
+                  <span class="text-gray-700 font-medium">Camara Laye</span>
                   <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
                     voir plus
                   </button>
@@ -101,7 +101,9 @@ export default function Homepage() {
                   sociales, dont la vie bascule après un acte
                 </p>
                 <div class="mt-4 flex items-center justify-between">
-                  <span class="text-gray-700 font-medium">50.000 G</span>
+                  <span class="text-gray-700 font-medium">
+                    Albert Camus
+                  </span>
                   <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
                     voir plus
                   </button>
@@ -123,7 +125,7 @@ export default function Homepage() {
                 <div class="mt-4 flex items-center justify-between">
                   <span class="text-gray-700 font-medium">50.000 G</span>
                   <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
-                    voir plus
+                    Rene Marran
                   </button>
                 </div>
               </div>
@@ -143,7 +145,7 @@ export default function Homepage() {
                   Indonesia. Notes of caramel, nuts, and tobacco.
                 </p>
                 <div class="mt-4 flex items-center justify-between">
-                  <span class="text-gray-700 font-medium">50.000 G</span>
+                  <span class="text-gray-700 font-medium">Molière</span>
                   <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
                     voir plus
                   </button>
@@ -165,7 +167,7 @@ export default function Homepage() {
                   Indonesia. Notes of caramel, nuts, and tobacco.
                 </p>
                 <div class="mt-4 flex items-center justify-between">
-                  <span class="text-gray-700 font-medium">Gratuit !</span>
+                  <span class="text-gray-700 font-medium">victor Hugo</span>
                   <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
                     voir plus
                   </button>
