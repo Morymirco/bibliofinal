@@ -353,7 +353,7 @@ export default function Homepage() {
               <div class="mb-8">
                 <img
                   class="object-center object-cover rounded-full h-36 w-36"
-                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                  src="./user.png"
                   alt="photo"
                 />
               </div>
@@ -370,7 +370,7 @@ export default function Homepage() {
               <div class="mb-8">
                 <img
                   class="object-center object-cover rounded-full h-36 w-36"
-                  src="alpha.jpg"
+                  src="/lpha.jpg"
                   alt="photo"
                 />
               </div>
@@ -402,7 +402,7 @@ export default function Homepage() {
               <div class="mb-8">
                 <img
                   class="object-center object-cover rounded-full h-36 w-36"
-                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                  src="portrait_mirco.jpg"
                   alt="photo"
                 />
               </div>
@@ -417,7 +417,7 @@ export default function Homepage() {
               <div class="mb-8">
                 <img
                   class="object-center object-cover rounded-full h-36 w-36"
-                  src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80"
+                  src="./user.png"
                   alt="photo"
                 />
               </div>
