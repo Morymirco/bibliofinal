@@ -407,7 +407,9 @@ export default function Homepage() {
                 />
               </div>
               <div class="text-center">
-                <p class="text-xl text-gray-700 font-bold mb-2">Inconnu</p>
+                <p class="text-xl text-gray-700 font-bold mb-2">
+                  Aboubacar Diallo
+                </p>
                 <p class="text-base text-gray-400 font-normal">
                   Graphic Designer
                 </p>
@@ -422,7 +424,7 @@ export default function Homepage() {
                 />
               </div>
               <div class="text-center">
-                <p class="text-xl text-gray-700 font-bold mb-2">inconnu</p>
+                <p class="text-xl text-gray-700 font-bold mb-2">Alpha</p>
                 <p class="text-base text-gray-400 font-normal">Dev Ops</p>
               </div>
             </div>
