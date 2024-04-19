@@ -9,7 +9,7 @@ function Contact(props) {
       />
 
       <section class="bg-gradient-to-bl from-blue-50 to-violet-50 py-20 lg:py-[120px] overflow-hidden relative z-10">
-        <div class="container">
+        <div class="container min-h-screen">
           <div class="flex flex-wrap lg:justify-between -mx-4">
             <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
               <div class="max-w-[570px] mb-12 lg:mb-0">
@@ -126,7 +126,7 @@ function Contact(props) {
                         hover:bg-opacity-90
                         "
                     >
-                      Send Message
+                      Envoyer
                     </button>
                   </div>
                 </form>
