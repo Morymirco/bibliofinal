@@ -370,7 +370,7 @@ export default function Homepage() {
               <div class="mb-8">
                 <img
                   class="object-center object-cover rounded-full h-36 w-36"
-                  src="/lpha.jpg"
+                  src="./alpha.jpg"
                   alt="photo"
                 />
               </div>
