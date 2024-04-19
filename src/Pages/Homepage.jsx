@@ -402,7 +402,7 @@ export default function Homepage() {
               <div class="mb-8">
                 <img
                   class="object-center object-cover rounded-full h-36 w-36"
-                  src="portrait_mirco.jpg"
+                  src="./user.png"
                   alt="photo"
                 />
               </div>
@@ -424,7 +424,9 @@ export default function Homepage() {
                 />
               </div>
               <div class="text-center">
-                <p class="text-xl text-gray-700 font-bold mb-2">Alpha</p>
+                <p class="text-xl text-gray-700 font-bold mb-2">
+                  Moussa Djoulde
+                </p>
                 <p class="text-base text-gray-400 font-normal">Dev Ops</p>
               </div>
             </div>
