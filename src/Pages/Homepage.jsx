@@ -402,7 +402,7 @@ export default function Homepage() {
               <div class="mb-8">
                 <img
                   class="object-center object-cover rounded-full h-36 w-36"
-                  src="./user.png"
+                  src="./membre.jpg"
                   alt="photo"
                 />
               </div>
