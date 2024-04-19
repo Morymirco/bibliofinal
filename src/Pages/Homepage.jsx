@@ -39,7 +39,7 @@ export default function Homepage() {
 
   const handleVoirPlus = (livre) => {
     console.log(livre.auteur);
-    // navigate(`/Livres/${livre.id}`, { state: livre }); // Pass livre data as state
+    navigate(`/Livres/${livre.id}`, { state: livre }); // Pass livre data as state
   };
   return (
     <div>
