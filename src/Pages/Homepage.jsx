@@ -359,7 +359,7 @@ export default function Homepage() {
               </div>
               <div class="text-center">
                 <p class="text-xl text-gray-700 font-bold mb-2">
-                  Ramata Diallo
+                  Mamadou Ramata Diallo
                 </p>
                 <p class="text-base text-gray-400 font-normal">
                   Designer Graphique
@@ -425,7 +425,7 @@ export default function Homepage() {
               </div>
               <div class="text-center">
                 <p class="text-xl text-gray-700 font-bold mb-2">
-                  Moussa Djoulde
+                  Moussa Djouldé Diallo
                 </p>
                 <p class="text-base text-gray-400 font-normal">Dev Ops</p>
               </div>
