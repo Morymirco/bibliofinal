@@ -142,7 +142,7 @@ function LivreDetail() {
                 Livres similaires{" "}
               </h1>
 
-              <Similaire />
+              <Similaire categorie={livre.selectedCategory} />
             </div>
           </div>
         </>
