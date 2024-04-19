@@ -1,17 +1,17 @@
 import React from "react";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import Footer from "./footer";
+import Footer from "../Components/Footer/footer";
 
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
 } from "firebase/auth";
-import { auth } from "./../src/firebaseconfig";
+import { auth } from "../firebaseconfig";
 import { useNavigate } from "react-router-dom";
 // FONCTION MERE
-const Login = ({setConnect}) => {
+const Login = ({ setConnect }) => {
   let navigate = useNavigate();
   const inputs = useRef([]);
   const [currentuser, setCurrentuser] = useState("");

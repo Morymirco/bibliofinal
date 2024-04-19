@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
-import { db, auth, storage } from "./../../firebaseconfig";
+import { db, auth, storage } from "./../firebaseconfig";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
@@ -45,7 +45,7 @@ function New({ connected }) {
           description,
           downloadURL, // Stockez l'URL de l'image de couverture dans la collection Firestore
           pdfDownloadURL,
-          auteur: { name: auth.currentUser.email, id: auth.currentUser.uid },
+          editeur: { name: auth.currentUser.email, id: auth.currentUser.uid },
         });
 
         // Affichez un message de succès
@@ -198,7 +198,7 @@ function New({ connected }) {
                   class="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 >
                   <option selected>Choisir une langue</option>
-                  <option value="Francçais">Francçais</option>
+                  <option value="Francçais">Français</option>
                   <option value="Anglais">Anglais</option>
                   <option value="Portugais">Portugais</option>
                   <option value="chinios">Chinios</option>
@@ -214,7 +214,14 @@ function New({ connected }) {
                 >
                   Année de publication
                 </label>
-                <select
+                <input
+                  className="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  type="number"
+                  name="default"
+                  id="default"
+                  onChange={handleYearChange}
+                />
+                {/* <select
                   onChange={handleYearChange}
                   id="default"
                   class="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -228,7 +235,7 @@ function New({ connected }) {
                   <option value="1966">1966</option>
                   <option value="1942">1942</option>
                   <option value="1921">1921</option>
-                </select>
+                </select> */}
               </div>
               <div className="mb-4 w-1/2">
                 <label

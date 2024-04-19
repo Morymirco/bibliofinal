@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { getDoc, doc } from "firebase/firestore";
-import { db } from "./firebaseconfig";
-import Footer from "./footer";
-import Modal from "./Modal";
-import Similaire from "./similaire";
+import { db } from "../firebaseconfig";
+import Footer from "../Components/Footer/footer";
+import Modal from "../Components/ModalShare/Modal";
+import Similaire from "../Components/LivresSimilaires/similaire";
 function LivreDetail() {
   const location = useLocation();
   const livre = location.state; // Récupérer les données du livre passées via l'état de localisation
@@ -87,9 +87,7 @@ function LivreDetail() {
                   <h2 className="text-2xl font-bold text-gray-800 mb-2">
                     {livre.titre}
                   </h2>
-                  <p className="text-gray-600 text-sm mb-4">
-                    {livre.auteur.name}
-                  </p>
+                  <p className="text-gray-600 text-sm mb-4">{livre.auteur}</p>
                   <div className="flex mb-4">
                     <div className="mr-4">
                       <span className="font-bold text-gray-700">

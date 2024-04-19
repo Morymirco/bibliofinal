@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "./footer";
+import Footer from "../Components/Footer/footer";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "./firebaseconfig";
+import { auth } from "../firebaseconfig";
 const Sign = ({ setConnect }) => {
   const inputs = useRef([]);
 
@@ -13,22 +13,25 @@ const Sign = ({ setConnect }) => {
       inputs.current.push(el);
     }
   };
-const signIn = async (email, password) => {
-  return await signInWithEmailAndPassword(auth, email, password);
-};
+  const signIn = async (email, password) => {
+    return await signInWithEmailAndPassword(auth, email, password);
+  };
 
-const handleform = async (e) => {
-  e.preventDefault();
-  console.log(inputs.current[1].value, inputs.current[2].value);
-  try {
-    const cred = await signIn(inputs.current[1].value, inputs.current[2].value);
-    setValidation("");
-    setConnect(true);
-    navigate("/");
-  } catch {
-    setValidation("Email ou mot de passe incorrecte");
-  }
-};
+  const handleform = async (e) => {
+    e.preventDefault();
+    console.log(inputs.current[1].value, inputs.current[2].value);
+    try {
+      const cred = await signIn(
+        inputs.current[1].value,
+        inputs.current[2].value
+      );
+      setValidation("");
+      setConnect(true);
+      navigate("/");
+    } catch {
+      setValidation("Email ou mot de passe incorrecte");
+    }
+  };
 
   return (
     <div>

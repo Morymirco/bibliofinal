@@ -1,12 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
-import { db, auth } from "./../../firebaseconfig";
+import { db, auth } from "../firebaseconfig";
 import toast, { Toaster } from "react-hot-toast";
-import Footer from "../../footer";
+import Footer from "../Components/Footer/footer";
 import { useNavigate } from "react-router-dom";
-import ButtonFavoris from "./ButtonFavoris";
-import LivreDetails from "../../Detail";
-import Load from "./load";
+import ButtonFavoris from "../Components/ButtonFavoris/ButtonFavoris";
+import Load from "../Components/Load/load";
 
 function Livres({ onligne }) {
   const [livres, setLivres] = useState([]);
@@ -34,6 +33,7 @@ function Livres({ onligne }) {
       }
     };
     fetchLivres();
+    console.log(onligne);
   }, []);
   const handleSearch = (searchTerm) => {
     const filteredLivres = originalLivres.filter((livre) =>
@@ -194,9 +194,7 @@ function Livres({ onligne }) {
                     >
                       {livre.description}
                     </p>
-                    <p className="text-gray-800 mt-2">
-                      Par {livre.auteur.name}
-                    </p>
+                    <p class="text-gray-700 font-medium mt-2">{livre.auteur}</p>
                   </div>
                   <div class="px-1 py-1 flex justify-between items-center">
                     <button
@@ -206,7 +204,7 @@ function Livres({ onligne }) {
                       Voir plus
                     </button>
 
-                    {onligne && livre.auteur.id === auth.currentUser.uid && (
+                    {onligne && livre.editeur.id === auth.currentUser.uid && (
                       <button
                         onClick={() => {
                           deletelivre(livre.id);

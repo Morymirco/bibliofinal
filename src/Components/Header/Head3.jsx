@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const navigation = [
   { name: "Home", to: "/", current: true },
   { name: "Livres", to: "/livres", current: false },
-  { name: "Mes livres", to: "/meslivres", current: false },
+  // { name: "Mes livres", to: "/meslivres", current: false },
   { name: "Contact", to: "/contact", current: false },
 ];
 
@@ -84,7 +84,7 @@ export default function Example({ connected, onligne, decon }) {
                   </a>
                   <a
                     href="https://threads.net/100daysofnextjs"
-                    class="text-xs font-medium px-4 py-2.5 rounded-full hidden sm:flex hover:opacity-100 hover:shadow-sm border border-[#127CE5] text-[#127CE5] text-white flex gap-1"
+                    class="text-xs font-medium px-4 py-2.5 rounded-full sm:flex hover:opacity-100 hover:shadow-sm border border-[#127CE5] text-[#127CE5] text-white flex gap-1"
                   >
                     <span class="flex items-center space-x-2 rounded-md group hover:rounded-full  transition hover:text-[#127CE5]">
                       <svg
